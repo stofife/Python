@@ -1,0 +1,2 @@
+pole = [__import__("random").sample(range(1,11), 5) for _ in range(10) ]
+print(f"Obvod: {sum(pole[0]) + sum(pole[len(pole) - 1]) + sum([pole[i][0] for i in range(1, len(pole) - 2)]) + sum([pole[i][len(pole[i]) - 1] for i in range(1, len(pole) - 1)])}\nDiagonala: {sum([pole[i][i] for i in range(len(pole[0]))])}")
