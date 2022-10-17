@@ -12,7 +12,7 @@ for i in range(druzstva):
 def body(ls):
     return ls[0] * 5 + ls[1] * 4 + ls[2] * 3
 
-for i in range(10):
+for i in range(druzstva):
     for i in range(druzstva - 1 ):
         if body(vyhry[i + 1]) > body(vyhry[i]):
             vyhry[i], vyhry[i+1] = vyhry[i+1], vyhry[i]
@@ -23,4 +23,4 @@ for vyhra in vyhry:
 print()
 
 for i in range(3):
-    print(f"{i+1}. miesto: {teams[i]}. družstvo, s počtom bodov {body(vyhry[i])}")
+    print(f"Na {i+1}. mieste: {teams[i]}. družstvo, s počtom bodov {body(vyhry[i])}")

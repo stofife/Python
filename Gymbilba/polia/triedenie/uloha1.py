@@ -26,6 +26,6 @@ def quick_sort(array):
     pivot = randint(0, len(arr1) - 1)
     array = bubble_sort(array[0:pivot]) + bubble_sort(array[pivot:])
     
-quick_sort(arr1)
+#quick_sort(arr1)
 
 root.mainloop()
