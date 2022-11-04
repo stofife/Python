@@ -22,3 +22,11 @@ zlta
 yellow
 cierna
 black
+modra
+blue
+skrecok
+hampster
+slovo
+word
+kvetina
+flower
