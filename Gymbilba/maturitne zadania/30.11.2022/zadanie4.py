@@ -1,0 +1,2 @@
+hlasy = list(map(int, [line.strip() for line in open("hlasovanie_1.txt").readlines()]))
+for sut in [i for i in range(5220, 5230)]: f, res= open(f"{sut}.txt", "w"), "\n".join(list(map(str, [i for i,v in enumerate(hlasy) if v == sut]))); f.write(res)
