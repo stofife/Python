@@ -1,3 +1,0 @@
-kraj, skore, file = [],([0],["Jozo"]), [line.strip().split(" ") for line in open("skok_do_dialky.txt").readlines()]
-for line in file: skore, kraj = (skore[0] + [max(list(map(int, line[2:])))], skore[1] + [line[0]]) if max(list(map(int, line[2:]))) >= max(skore[0]) else skore, kraj + [line[1]] if not line[1] in kraj else kraj
-[print("  ".join(kraj)), print(" ". join([f'{kraj[s]}: {[[file[i][1] for i in range(len(file))].count(k) for k in kraj][s]}' for s in range(len(kraj))])), print(" ".join([skore[1][s] for s in [i for i in range(len(skore[0])) if skore[0][i] == max(skore[0])]]))]
