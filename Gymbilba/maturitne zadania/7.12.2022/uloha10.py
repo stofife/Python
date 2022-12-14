@@ -1,10 +1,10 @@
 from tkinter import *
 
-root = Tk()
 
 inp = input("exp to eval: ")
 
-c = Canvas(root, width="320", height="128")
+root = Tk()
+c = Canvas(root, width="1000", height="128")
 
 colors, color = ["blue", "violet", "orange" "yellow", "green", "cyan", "pink"], ["black"] * len(inp)
 par = []
@@ -19,6 +19,7 @@ for index, char in enumerate(list(inp)):
         else:
             color[index] = "red"
 
+print(par)
 for i in par:
     color[i] = "red"
 
@@ -29,5 +30,4 @@ if par != []:
     c.create_text(40, 60, text="Si kokot.")
 
 c.pack()
-
-root.mainloop()  
+root.mainloop()

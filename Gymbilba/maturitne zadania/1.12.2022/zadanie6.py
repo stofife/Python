@@ -1,4 +1,4 @@
-import tkinter, random
+import tkinter
 root = tkinter.Tk()
 c = tkinter.Canvas(root, width="1000", height="700")
 c.pack()

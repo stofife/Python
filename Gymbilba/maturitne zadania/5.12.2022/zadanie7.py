@@ -20,6 +20,8 @@ for line in lines:
             count = 1
             char_i += 1
         if char_i + 1 == len(line):
+            out += f"{line[char_i]} {count}"
+            out += "\n"
             break
             
 out_file = open("hada_komprimovane.txt", "w")
