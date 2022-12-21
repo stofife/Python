@@ -17,4 +17,4 @@ for menu in menu_counts.keys():
         for p in f:
             if p[1] == menu:
                 ppl.append(p[0])
-        print(f"Stravnici s cislami {', '.join(ppl)} dostanu iny obed.")
+        print(f"Stravnici s cislami {', '.join(ppl)} dostanu iny obed, pretoze si ich obed objednalo prilis malo ludi ({len(ppl)}).")
