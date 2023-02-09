@@ -1,0 +1,1 @@
+while True: globals()["inp"] = input(": ").split(" "); print(int(inp[0], base=int(inp[1])))
